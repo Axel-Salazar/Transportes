@@ -1,0 +1,133 @@
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: url('img/img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Cabecera */
+.header {
+    background: linear-gradient(135deg, #003366, #FF0000);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 50px;
+    background: transparent; /* ✅ Ahora el fondo del body será visible */
+}
+
+
+/* Sección de login */
+.login-section {
+    background: rgba(255, 255, 255, 0.7); /* Blanco transparente */
+    backdrop-filter: blur(10px);          /* Desenfoque */
+    -webkit-backdrop-filter: blur(10px);  /* Soporte para Safari */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-section h2 {
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* Formulario */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 51, 102, 0.5);
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+    padding: 15px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #003366;
+}
+
+/* Enlace de registro */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viajes - Jarmex</title>
+  <link rel="stylesheet" href="estilo.css"/>
+  <link rel="stylesheet" href="viajes.css"/>
+</head>
+<body>
+  <!-- Cabecera -->
+  <header class="header">
+    <div class="logo">JARMEX</div>
+    <nav class="navbar">
+      <a href="proto.html">Inicio</a>
+      <a href="rastreo.html">Rastreo</a>
+      <a href="viajes.html" class="active">Viajes</a>
+      <a href="Recursos.html">Recursos</a>
+      <a href="facturación.html">Facturación</a>
+      <a href="Mi Perfil.html">Mi Perfil</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <section class="viajes-section">
+      <h2>Gestión de Viajes</h2>
+      <button id="btnAgregar">➕ Agregar viaje</button>
+
+      <table id="tablaViajes">
+        <thead>
+          <tr>
+            <th>Origen</th>
+            <th>Destino</th>
+            <th>Fecha</th>
+            <th>Camión</th>
+            <th>Operador</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Viajes se cargarán aquí -->
+        </tbody>
+      </table>
+
+      <!-- Modal formulario -->
+      <div class="modal" id="modalViaje">
+        <div class="modal-content">
+          <h2 id="modalTitulo">Agregar viaje</h2>
+          <form id="formViaje">
+            <label for="origen">Origen</label>
+            <input type="text" id="origen" name="origen" required />
+
+            <label for="destino">Destino</label>
+            <input type="text" id="destino" name="destino" required />
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required />
+
+            <label for="camion">Camión</label>
+            <input type="text" id="camion" name="camion" required />
+
+            <label for="operador">Operador</label>
+            <input type="text" id="operador" name="operador" required />
+
+            <div class="modal-actions">
+              <button type="button" class="btnCancelar" id="btnCancelar">Cancelar</button>
+              <button type="submit" class="btnGuardar" id="btnGuardar">Guardar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="java.js"></script>
+  <script src="viajes.js"></script>
+</body>
+</html>

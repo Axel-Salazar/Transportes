@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - Jarmex</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="logo">JARMEX</div>
+        <nav class="navbar">
+            <a href="proto.html">Inicio</a>
+            <a href="rastreo.html">Rastreo</a>
+            <a href="viajes.html">Viajes</a>
+            <a href="recursos.html">Recursos</a>
+            <a href="facturación.html">Facturación</a>
+            <a href="Mi Perfil.html" class="active">Mi Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="profile-container">
+            <h2>Mi Perfil</h2>
+            <form id="profileForm" class="profile-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" placeholder="Introduce tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="Introduce tu correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="Introduce tu contraseña" required>
+                </div>
+                <button type="submit" class="profile-button">Guardar cambios</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="java.js"></script>
+    <script src="perfil.js"></script>
+</body>
+</html>

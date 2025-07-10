@@ -1,0 +1,76 @@
+/* estilos para gracias.html */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('img/img1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(135deg, #003366, #FF0000);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main.main-content {
+    max-width: 500px;
+    margin: 50px auto 100px auto; /* margen superior 50px, inferior 100px */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333;
+    min-height: auto; /* o simplemente no pongas min-height */
+    height: auto; /* que el alto sea automático, según contenido */
+}
+
+.main-content h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.billing-button {
+    padding: 15px 30px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.billing-button:hover {
+    background-color: #003366;
+}

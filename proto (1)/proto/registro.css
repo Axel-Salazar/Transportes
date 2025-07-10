@@ -1,0 +1,49 @@
+main.main-content {
+    max-width: 500px;
+    margin: 50px auto 100px auto; /* margen superior 50px, inferior 100px */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    color: #333;
+    min-height: auto; /* o simplemente no pongas min-height */
+    height: auto; /* que el alto sea automático, según contenido */
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-button {
+    padding: 15px;
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #003366;
+}
+
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

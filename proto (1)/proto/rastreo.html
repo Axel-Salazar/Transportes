@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo en Tiempo Real</title>
+    <link rel="stylesheet" href="estilo.css">
+   <link rel="stylesheet" href="rastreo.css">
+<!-- Hoja de estilos de Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Cabecera -->
+     <header class="header">
+        <div class="logo">JARMEX</div>
+        <nav class="navbar">
+            <a href="proto.html">Inicio</a>
+            <a href="rastreo.html" class="active">Rastreo</a>
+            <a href="Viajes.html">Viajes</a>
+            <a href="Recursos.html">Recursos</a>
+            <a href="facturación.html">Facturación</a>
+            <a href="Mi Perfil.html">Mi Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="tracking-container">
+            <h2>Rastreo en Tiempo Real</h2>
+            <p>Introduce tu número de rastreo para ver la ubicación del camión.</p>
+            <form id="trackingForm" class="tracking-form">
+                <input type="text" id="trackingNumber" placeholder="Introduce tu número de rastreo" required>
+                <button type="submit">Rastrear</button>
+            </form>
+            <div id="map"></div>
+        </div>
+    </main>
+
+    <!-- Script de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="java.js"></script>
+    <script src="rastreo.js"></script>
+</body>
+</html>

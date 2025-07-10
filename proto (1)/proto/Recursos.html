@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos - Jarmex</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="recursos.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="logo">JARMEX</div>
+        <nav class="navbar">
+            <a href="proto.html">Inicio</a>
+            <a href="rastreo.html">Rastreo</a>
+            <a href="viajes.html">Viajes</a>
+            <a href="recursos.html" class="active">Recursos</a>
+            <a href="facturación.html">Facturación</a>
+            <a href="Mi Perfil.html">Mi Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="resources-container">
+            <h2>Recursos Disponibles</h2>
+            <p>Aquí puedes consultar y gestionar los recursos asignados a los viajes.</p>
+
+            <table class="resources-table">
+                <thead>
+                    <tr>
+                        <th>ID Recurso</th>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaRecursos">
+                    <!-- Aquí se insertarán dinámicamente los recursos -->
+                </tbody>
+            </table>
+
+            <button id="btnAgregarRecurso" class="resource-button">Agregar Recurso</button>
+        </div>
+
+        <!-- Modal para agregar/editar recurso -->
+        <div id="modalRecurso" class="modal">
+            <div class="modal-content">
+                <h3 id="modalTitulo">Agregar Recurso</h3>
+                <form id="formRecurso">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tipo">Tipo</label>
+                        <input type="text" id="tipo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" required>
+                            <option value="Disponible">Disponible</option>
+                            <option value="En uso">En uso</option>
+                            <option value="Mantenimiento">Mantenimiento</option>
+                        </select>
+                    </div>
+                    <div class="modal-actions">
+                        <button type="submit" class="resource-button">Guardar</button>
+                        <button type="button" id="btnCancelarRecurso" class="resource-button cancel">Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="java.js"></script>
+    <script src="recursos.js"></script>
+</body>
+</html>
